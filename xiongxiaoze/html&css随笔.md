@@ -34,4 +34,29 @@
     <div class="main"></div>
 </div>
 
-- BFC作用：自适应两栏布局。代码同上面对
+- BFC作用：自适应两栏布局。代码同上面对---前一个是浮动元素，后一个是文字，在后一个加上overflow形成两栏布局
+- 实现div居中 {
+					width: 200px;/*元素的宽度*/
+					height:200px;/*元素的高度*/
+					position: absolute;
+					left: 50%;/*配合margin-left的负值实现水平居中*/
+					margin-left: -100px;/*值的大小等于元素宽度的一半*/
+					top:50%;/*配合margin-top的负值实现垂直居中*/
+					margin-top: -100px;/*值的大小等于元素高度的一半*/
+				}
+- 浮动元素后面的行级元素会无视行级元素，并且行级元素会避开浮动元素，从而形成文字环绕
+- 给包含浮动的元素添加一个overflow：hidden；清除浮动
+- p标签加上overflow，就导致p标签变成BFC，而BFC则不会和浮动的元素去重叠
+- 形成BFC的条件
+    - 浮动元素，float 除 none 以外的值； 
+    - 定位元素，position（absolute，fixed）； 
+    - display 为以下其中之一的值 inline-block，table-cell，table-caption； 
+    - overflow 除了 visible 以外的值（hidden，auto，scroll）；
+- z-index 在z轴上的层次，可以为负数，整数表示，值越大越靠近用户
+    - 比较时是在一般具有绝对定位而且具有原始的z-index---形成堆叠上下文
+- line-height指的是上一行文字的底到下一行文字的底
+- vertical-align-----垂直对其--上下移动
+    - 图片或者文字不想有下缝隙
+        - 1将图片或文字设置成block
+        - 2把图片或文字设置vertical-align：middle
+- text-align----水平对齐--左右移动
