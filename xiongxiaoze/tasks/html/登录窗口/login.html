@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div id="login">
+        <p id="img_logo"><img src="img/binglan.png"></p>
+
+        <form method="POST" action="login.js">
+
+            <p><label class="label_input">用户名</label><input type="text" id="username" class="text_field"></p>
+            <p><label class="label_input">密码</label><input type="text" id="password" class="text_field"></p>
+
+            <div id="login_control">
+                <input id="butn_login" type="text" value="登录" onclick="login()">
+                <a id="forget_pwd" href="">忘记密码</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
