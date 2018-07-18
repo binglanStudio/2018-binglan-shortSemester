@@ -1,0 +1,83 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+#nav{
+	text-align: right;
+	margin-top: 21px;
+	margin-right: 8px;
+	margin-bottom: 50px;
+	font-size: 15px;
+}
+#nav a{
+	color: #333;
+	font-weight: bold;
+	margin: 0 7px;
+}
+#nav a.login
+#nav a.set{
+	font-weight: normal;
+}
+#nav button{
+	background-color: #38f;
+	padding: 0 0;
+	margin-left: 5px;
+	color: white;
+}
+#nav a:hover{
+	color: #00c;
+}
+#main{
+	width: 655px;
+	height: 488px;
+	margin: 0 auto;
+}
+#main .picture{
+	text-align: center;
+	margin-bottom: 19px;
+}
+#main input{
+	border:1px solid #BBB;
+	width: 540px;
+	height: 33px;
+	padding-left: 5px;
+	margin: 0;
+}
+#main input.sub{
+	width: 100px;
+	height: 37px;
+	background: #38f;
+	color: white;
+font-size: 15px;
+border:0;
+margin: 0;
+}
+#main input.si{
+	float: left;
+}
+#main .code{
+	position: absolute;
+top: 60%;
+right: 50%;
+}
+#main .wen{
+	position: absolute;
+	top: 72%;
+	right: 52%;
+	font-size: 15px;
+	color: slategray;
+}
+#bottom{
+	margin-top: 249px;
+}
+#bottom .ab{
+	font-size: 12px;
+	text-align: center;
+}
+#bottom .ab a{
+	margin: 0 6px;
+	color: #666;
+}
+#bottom .ab p{
+	color: #666;
+}
