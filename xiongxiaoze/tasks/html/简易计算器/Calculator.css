@@ -1,0 +1,70 @@
+#div1{
+    margin: 0 auto;
+    width: 22%;
+    height: 300px;
+    background:#c0c0c0;
+}
+#div2{
+    position: relative;
+    top: 10px;
+    left: 5%;
+    width: 90%;
+    height:280px;
+    background:#000000;
+    border-radius: 5%;
+}
+#Calculator{
+    position: absolute;
+    bottom: 0px;
+    border-collapse: separate;
+    border-spacing: 9px;
+}
+button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:1px solid #606060;
+}
+#screenName{
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    width: 127px;
+    height: 20px;
+    font-size: 20px;
+    color: white;
+    background: black;
+    border: 1px solid black;
+}
+td{
+    margin-left: 5px;
+}
+#c,#none,#per,#divid,#mul,#min,#plus,#GT{
+    opacity:0.4;
+}
+#eva{
+    background: #f40;
+}
+#zero,#point,#one,#two,#three,#four,#five,#six,#seven,#eight,#nine{
+    background: black;
+    color: #b8b8b8;
+}
+button:hover{
+    font-size: 20px;
+}
+#line1{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+#line2{
+    position: relative;
+    top: 70px;
+    left: 10px;
+}
+#name{
+    position: absolute;
+    left: 35px;
+    margin-top: -2px;
+    color: antiquewhite;
+}
