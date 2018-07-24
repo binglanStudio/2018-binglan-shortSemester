@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算器</title>
+    <script>
+        var result="";
+        function get(key){
+            result+=key.value;
+            document.getElementById("output").value=result;
+        }
+        function clean(){
+            result="";
+            document.getElementById("output").value=result;
+        }
+        function compute(){
+            result=eval(result);
+            document.getElementById("output").value=result;
+            result="";
+        }
+    </script>
+    <style>
+        .table {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            font-size: 35px;
+            margin-top: 30vh;
+            align-items:center;
+            
+           
+        }
+        button {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            font-size: 20px;
+            color:rgb(7, 24, 75);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="table" >
+    <div class="top">简单计算器</div>
+    <div class="main">
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="output"></td>
+            <td><button onclick="clean()">AC</button></td>
+        </tr>
+        <tr>
+            <td><button id="1" value="1" onclick="get(this)">1</button></td>
+            <td><button id="2" value="2" onclick="get(this)">2</button></td>
+            <td><button id="3" value="3" onclick="get(this)">3</button></td>
+            <td><button id="+" value="+" onclick="get(this)">+</button></td>
+            <td><button id="-" value="-" onclick="get(this)">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="4" value="4" onclick="get(this)">4</button></td>
+            <td><button id="5" value="5" onclick="get(this)">5</button></td>
+            <td><button id="6" value="6" onclick="get(this)">6</button></td>
+            <td><button id="*" value="*" onclick="get(this)">*</button></td>
+            <td><button id="/" value="/" onclick="get(this)">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="7" value="7" onclick="get(this)">7</button></td>
+            <td><button id="8" value="8" onclick="get(this)">8</button></td>
+            <td><button id="9" value="9" onclick="get(this)">9</button></td>
+            <td><button id="0" value="0" onclick="get(this)">0</button></td>
+            <td><button id="=" value="=" onclick="compute()">=</button></td>
+        </tr>
+    </table>
+    </div>
+    </div>
+</body>
+</html>
