@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Vue.js"></script>
+    
+</head>
+<body>
+    <div id="box">
+        <input type="button" value="按钮" v-on:click="a = false">
+        <div style="width: 100px;height: 100px;background: red;" v-show="a"></div>
+    </div>
+
+    <script>
+        new Vue({
+            el:'#box',
+            data:{
+                a:true
+            },
+           
+        })
+    </script>
+</body>
+</html>

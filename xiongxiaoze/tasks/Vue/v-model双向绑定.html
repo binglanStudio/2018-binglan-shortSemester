@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="C:\Users\dh185\2018-binglan-shortSemester\xiongxiaoze\tasks\JQuery\jquery-3.3.1.js"></script>
+    <script src="Vue.js"></script>
+    <script>
+        window.onload = function () {
+            new Vue({
+                el: '.box',//去掉div 写body
+                data: {
+                    msg: 'welcom Vue!',
+                    msg2:12,
+                    msg3:true,
+                    arr:['apple','banana','orange','pear'],
+                    json:{a:'apple',b:'banana',c:'orange'}
+                }
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <input type="text" v-model='msg'>
+        <input type="text" v-model='msg'>
+        <br> 
+        {{msg}}
+        <br>
+        {{msg2}}
+        <br>
+        {{arr}}
+        <br>
+        {{arr}}
+        <br>
+        {{json}}
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{width: 300px;height: 200px;margin: 0 auto;}
+        #text1,#text2{display: block;margin-top: 10px;}
+        #butn1{margin-top: 10px;}
+    </style>
+    <script>
+        window.onload = function(){
+            var oButn = document.getElementById('butn1')
+            var oText1 = document.getElementById('text1')
+            var oText2 = document.getElementById('text2')
+            oButn.onclick = function(){
+                alert(oText1.value)
+                alert(oText2.value)
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input id="text1" type="text">
+        <input id="text2" type="text">
+        <button id="butn1">传参</button>
+    </div>
+</body>
+</html>

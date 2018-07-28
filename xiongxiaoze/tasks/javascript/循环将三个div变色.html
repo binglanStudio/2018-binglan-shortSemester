@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #wrapper{width: 500px;height: 300px;background: red;margin: 0 auto;}
+        button{margin: 0 auto;display: block;}
+        #A{width: 100px;height: 100px;background: black;display:inline-block;margin-left: 50px;margin-top: 50px;}
+    </style>
+    <script>
+        window.onload = function(){
+            var oButn = document.getElementById('butn1')
+            var oDiv  = document.getElementById('wrapper').getElementsByTagName('div')
+
+            oButn.onclick = function(){
+                for(var i = 0;i<oDiv.length;i++){
+                    oDiv[i].style.background = 'yellow'
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <button id="butn1">点击变色</button>
+        <div id="A"></div>
+        <div id="A"></div>
+        <div id="A"></div>
+    </div>
+</body>
+</html>

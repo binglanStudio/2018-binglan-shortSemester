@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Vue.js"></script>
+    
+</head>
+<body>
+    <div id="box">
+        <input type="button" value="按钮" v-on:click="show()">
+        <input type="button" value="加一" v-on:click="count += 1">
+        <p>{{count}}</p>
+    </div>
+
+    <script>
+        new Vue({
+            el:'#box',
+            data:{
+                count:0
+            },
+            methods:{//on监听的事件函数放到methods里面  mouseover mouseout dblclivk(双击)
+                show:function(){
+                    alert(1)
+                }
+            }
+        })
+    </script>
+</body>
+</html>
